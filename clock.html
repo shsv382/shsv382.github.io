@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+  .hours {
+    box-shadow: 2px 2px 5px 3px #dadada;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: auto;
+    position: relative;
+    top: 100px;
+  }
+  
+  #hour {
+    height: 120px;
+    width: 0px;
+    margin: auto;
+    position: relative;
+    top: 40px;
+  }
+  
+  #hour-white {
+    border: none;
+    height: 50px;
+    width: 0px;
+    margin: auto;
+  }
+  
+  #hour-black {
+    border: 1px solid #333;
+    background-color: #333;
+    border-radius: .5px;
+    height: 70px;
+    width: 0px;
+    margin: auto;
+  }
+  
+  #minute {
+    height: 160px;
+    width: 0px;
+    margin: auto;
+    position: relative;
+    top: -100px;
+  }
+  
+  #minute-white {
+    border: none;
+    height: 70px;
+    width: 0px;
+    margin: auto;
+  }
+  
+  #minute-black {
+    border: 1px solid #333;
+    background-color: #333;
+    border-radius: .5px;
+    height: 90px;
+    width: 0px;
+    margin: auto;
+  }
+  
+  #second {
+    height: 160px;
+    width: 0px;
+    margin: auto;
+    position: relative;
+    top: -260px;
+  }
+  
+  #second-white {
+    border: none;
+    height: 70px;
+    width: 0px;
+    margin: auto;
+  }
+  
+  #second-black {
+    border: 1px solid #c30;
+    background-color: #c30;
+    border-radius: .5px;
+    height: 90px;
+    width: 0px;
+    margin: auto;
+  }
+
+
+  #round {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 5px 1px #ccc;
+    border-radius: 100%;
+    background-color: white;
+    position: relative;
+    top: -355px;
+    left: 83px;
+  }
+</style>
+
+<body>
+
+  <div class="hours">
+    <div id="hour">
+      <div id="hour-black">
+      </div>
+      <div id="hour-white">
+      </div>
+    </div>
+    <div id="minute">
+      <div id="minute-black">
+      </div>
+      <div id="minute-white">
+      </div>
+    </div>
+    <div id="second">
+      <div id="second-black">
+      </div>
+      <div id="second-white">
+      </div>
+    </div>
+
+    <div id="round"></div>
+  </div>
+
+  <script>
+  
+    var time = new Date();
+    var hour = document.getElementById('hour');
+    var hor = (time.getHours() + time.getMinutes()/60) % 12;
+    hour.style.WebkitTransform = "rotate(" + hor * 30  + "deg)";
+    var hourBlack = document.getElementById('hour-black');
+      if (hor >= 0 && hor < 3)
+        {hourBlack.style.boxShadow = (2 - hor/1.5) + "px " + (-hor) + "px " + "1px 1px #ccc";}
+      else if (hor >= 3 && hor < 6)
+        {hourBlack.style.boxShadow = (2 - hor/1.5) + "px " + (hor - 6) + "px " + "1px 1px #ccc";}
+      else if (hor >= 6 && hor < 9)
+        {hourBlack.style.boxShadow = (hor/1.5 - 6) + "px " + (hor/3 - 2) + "px " + "1px 1px #ccc";}
+      else if (hor >= 9 && hor < 12)
+        {hourBlack.style.boxShadow = (hor/1.5 - 6) + "px " + (1 - hor/12) + "px " + "1px 1px #ccc";}
+    
+    var min = time.getMinutes() + time.getSeconds()/60;
+    var minute = document.getElementById('minute');
+    minute.style.WebkitTransform = "rotate(" + min * 6  + "deg)";
+    var minuteBlack = document.getElementById('minute-black');
+      if (min >= 0 && min < 15)
+        {minuteBlack.style.boxShadow = (2 - min/7.5) + "px " + (-min/5) + "px " + "1px 1px #ccc";}
+      else if (min >= 15 && min < 30)
+        {minuteBlack.style.boxShadow = (2 - min/7.5) + "px " + (min/5 - 6) + "px " + "1px 1px #ccc";}
+      else if (min >= 30 && min < 45)
+        {minuteBlack.style.boxShadow = (min/7.5 - 6) + "px " + (min/15 - 2) + "px " + "1px 1px #ccc";}
+      else if (min >= 45 && min < 60)
+        {minuteBlack.style.boxShadow = (min/7.5 - 6) + "px " + (1 - min/60) + "px " + "1px 1px #ccc";}
+    
+    var sec = time.getSeconds();
+    var second = document.getElementById('second');
+    second.style.WebkitTransform = "rotate(" + sec * 6  + "deg)";
+    var secondBlack = document.getElementById('second-black');
+    if (sec >= 0 && sec < 15)
+        {secondBlack.style.boxShadow = (2 - sec/7.5) + "px " + (-sec/5) + "px " + "1px 1px #ccc";}
+      else if (sec >= 15 && sec < 30)
+        {secondBlack.style.boxShadow = (2 - sec/7.5) + "px " + (sec/5 - 6) + "px " + "1px 1px #ccc";}
+      else if (sec >= 30 && sec < 45)
+        {secondBlack.style.boxShadow = (sec/7.5 - 6) + "px " + (sec/15 - 2) + "px " + "1px 1px #ccc";}
+      else if (sec >= 45 && sec < 60)
+        {secondBlack.style.boxShadow = (sec/7.5 - 6) + "px " + (1 - sec/60) + "px " + "1px 1px #ccc";}
+    
+    var hr = setInterval(function() {
+      time = new Date();
+      hor = (time.getHours() + time.getMinutes()/60) % 12;
+      var hour = document.getElementById('hour');
+      hour.style.WebkitTransform = "rotate(" + hor * 30  + "deg)";
+      var hourBlack = document.getElementById('minute-black');
+      if (hor >= 0 && hor < 3)
+        {hourBlack.style.boxShadow = (2 - hor/1.5) + "px " + (-hor) + "px " + "1px 1px #ccc";}
+      else if (hor >= 3 && hor < 6)
+        {hourBlack.style.boxShadow = (2 - hor/1.5) + "px " + (hor - 6) + "px " + "1px 1px #ccc";}
+      else if (hor >= 6 && hor < 9)
+        {hourBlack.style.boxShadow = (hor/1.5 - 6) + "px " + (hor/3 - 2) + "px " + "1px 1px #ccc";}
+      else if (hor >= 9 && hor < 12)
+        {hourBlack.style.boxShadow = (hor/1.5 - 6) + "px " + (1 - hor/12) + "px " + "1px 1px #ccc";}
+    }, 60000);
+    
+    var mn = setInterval(function() {
+      time = new Date();
+      min = time.getMinutes() + time.getSeconds()/60;
+      var minute = document.getElementById('minute');
+      minute.style.WebkitTransform = "rotate(" + min * 6  + "deg)";
+      var minuteBlack = document.getElementById('minute-black');
+      if (min >= 0 && min < 15)
+        {minuteBlack.style.boxShadow = (2 - min/7.5) + "px " + (-min/5) + "px " + "1px 1px #ccc";}
+      else if (min >= 15 && min < 30)
+        {minuteBlack.style.boxShadow = (2 - min/7.5) + "px " + (min/5 - 6) + "px " + "1px 1px #ccc";}
+      else if (min >= 30 && min < 45)
+        {minuteBlack.style.boxShadow = (min/7.5 - 6) + "px " + (min/15 - 2) + "px " + "1px 1px #ccc";}
+      else if (min >= 45 && min < 60)
+        {minuteBlack.style.boxShadow = (min/7.5 - 6) + "px " + (1 - min/60) + "px " + "1px 1px #ccc";}
+    }, 6000);
+    
+    var sc = setInterval(function() {
+      time = new Date();
+      sec = time.getSeconds();
+      var second = document.getElementById('second');
+      second.style.WebkitTransform = "rotate(" + sec * 6  + "deg)";
+      var secondBlack = document.getElementById('second-black');
+      if (sec >= 0 && sec < 15)
+        {secondBlack.style.boxShadow = (2 - sec/7.5) + "px " + (-sec/5) + "px " + "1px 1px #ccc";}
+      else if (sec >= 15 && sec < 30)
+        {secondBlack.style.boxShadow = (2 - sec/7.5) + "px " + (sec/5 - 6) + "px " + "1px 1px #ccc";}
+      else if (sec >= 30 && sec < 45)
+        {secondBlack.style.boxShadow = (sec/7.5 - 6) + "px " + (sec/15 - 2) + "px " + "1px 1px #ccc";}
+      else if (sec >= 45 && sec < 60)
+        {secondBlack.style.boxShadow = (sec/7.5 - 6) + "px " + (1 - sec/60) + "px " + "1px 1px #ccc";}
+    }, 500);
+    
+  </script>
+
+
+</body>
+
+</html>
