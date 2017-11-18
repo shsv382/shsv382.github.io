@@ -2,14 +2,14 @@
 	font-family: 'Istok Web', sans-serif;
 }
 
-.container {
-	margin-bottom: 80px;
-}
-
 .no-padding {
 	padding: 0;
 	margin: 0;
 	position: relative;
+}
+
+.container {
+	padding-bottom: 80px;
 }
 
 nav {
@@ -54,9 +54,6 @@ nav {
 	top: -50px;
 	z-index: 1;
 	height: 500px;
-	background-color: #7c5;
-	background: url("http://www.rumax.ru/images/projects/RM-166_b.jpg") no-repeat center center;
-	background-size: cover;
 	color: white;
 	letter-spacing: 0.22em;
 	text-shadow: 0 1.5px 10px #f71;
@@ -64,30 +61,63 @@ nav {
 	padding: 0;
 }
 
-/* http://cdn.fishki.net/upload/post/2017/03/31/2256141/81a0af12608bf7f4aaa6ebd591a32cd7.jpg */
-
-.head-banner > h3 {
+.head-banner-image {
 	position: absolute;
-	top: 120px;
+	width: 100%;
+	top: -50px;
+	z-index: 1;
+	height: 500px;
+	background-color: #7c5;
+	color: white;
+	letter-spacing: 0.22em;
+	text-shadow: 0 1.5px 10px #f71;
+	text-align: center;
+	padding: 0;
+	opacity: 0;
+}
+
+.image-1 {
+	background: url("images/1.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.image-2 {
+	background: url("images/2.jpg") no-repeat center center;
+	background-size: cover;
+}
+.image-3 {
+	background: url("images/3.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.image-4 {
+	background: url("images/4.jpg") no-repeat center center;
+	background-size: cover;
+}
+.image-5 {
+	background: url("images/5.jpg") no-repeat center center;
+	background-size: cover;
+	opacity: 1;
+}
+
+.head-banner > h1{
+	position: relative;
+	top: 100px;
 	width: 100%;
 	font-size: 5em;	
-	letter-spacing: 0.15em;
+	letter-spacing: 0.1em;
+	background-color: rgba(71,18,0,0.4);
+	background: linear-gradient(rgba(71,18,0,0.6), rgba(64,16,0,0.6));
 }
 
 .head-banner > h4 {
 	position: absolute;
-	top: 220px;
-	width: 100%;
-	font-size: 3em;	
-	letter-spacing: 0.1em;
-}
-
-.head-banner > h1 {
-	position: absolute;
 	bottom: 10px;
 	width: 100%;
 	font-size: 1.3em;	
-	letter-spacing: 0.1em;
+	letter-spacing: 1.1em;
+	background-color: rgba(71,18,0,0.4);
+	background: linear-gradient(rgba(71,18,0,0.6), rgba(64,16,0,0.6));
 }
 
 .description {
@@ -97,14 +127,21 @@ nav {
 	font-size: 1.25em;
 }
 
+h1.description {
+	width: 95%;
+	font-size: 3em;
+	color: #471200;
+}
+
 .advantage {
 	margin: 30px 0 10px 0;
 	padding: 20px;
 	height: 200px;
-	border: 5px solid #bbb;
+	border: 5px solid #471200;
 	border-radius: 3px;
+	background-color: rgba(71,18,0,0.1);
 	text-align: center;
-	color: #555;
+	color: #471200;
 	position: relative;
 }
 
@@ -123,33 +160,36 @@ nav {
 	margin: auto;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
 	.menu {
 		position: fixed;
 		bottom: 0;
 		left: 0;
-		box-shadow: 0;
 	}
 
 	.navbar {
 		position: fixed;
-		bottom: 0;
+		bottom: -3px;
 		left: -5px;
 		width: 105%;
 		margin: auto;
 		overflow: hidden;
-		box-shadow: 0;
 	}
 	
 	.nav-unit > a {
-		font-size: 1em;
+		font-size: 1.4em;
+	}
+
+	li > a:focus, .nav-unit > li > a:hover, .nav-unit > li > a:transparent {
+		background-color: #471200;
+		background: linear-gradient(#471200, #401000);
 	}
 	
 	.nav {
 		width: 100%;
 		margin: auto;
 		overflow: hidden;
-		box-shadow: 0;
+		box-shadow: none;
 		border-bottom-right-radius: none;
 		border-bottom-left-radius: none;
 	}
@@ -162,4 +202,36 @@ nav {
 		display: block;
 	}
 
+	.hamburger {
+		font-size: 2.2em;
+		text-align: right;
+		cursor: pointer;
+		display: block;
+		width: 80%;
+		height: 100%;
+	}
+
+	.container {
+		margin-bottom: 80px;
+	}
+
+	.head-banner > h1 {
+		font-size: 3em;	
+		letter-spacing: 0.1em;
+		top: 0;
+		padding: 120px 0;
+		height: 100%;
+	}
+
+	.head-banner > h3 {
+		font-size: 1.9em;	
+		letter-spacing: 0.05em;
+	}
+
+	.head-banner > h4 {
+		font-size: 1.3em;	
+		letter-spacing: 0.02em;
+		padding: 0 10px 20px 10px;
+		box-shadow: 0 0 2px 2px #471200;
+	}
 }
