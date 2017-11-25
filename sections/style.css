@@ -9,7 +9,13 @@
 }
 
 .container {
-	padding-bottom: 80px;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	position: relative;
+}
+
+.row {
+	position: relative;
 }
 
 nav {
@@ -160,6 +166,23 @@ h1.description {
 	margin: auto;
 }
 
+footer {
+	margin: 10px auto;
+	color: #bbb;
+	bottom: 0;
+	padding: 10px 30px;
+	width: 100%;
+	border-top: 1px solid #aaa;
+}
+
+footer > span {
+	cursor: pointer;
+}
+
+footer > a {
+	color: #888;
+}
+
 @media screen and (max-width: 360px) {
 	.menu {
 		position: fixed;
@@ -202,9 +225,11 @@ h1.description {
 		display: block;
 	}
 
+
 	.hamburger {
 		font-size: 2.2em;
 		text-align: right;
+		vertical-align: middle;
 		cursor: pointer;
 		display: block;
 		width: 80%;
@@ -212,14 +237,20 @@ h1.description {
 	}
 
 	.container {
-		margin-bottom: 80px;
+		margin-bottom: 40px;
+		padding-top: 0;
+	}
+
+	.head-banner, .head-banner-image {
+		height: 640px;
+		background-size: cover;
 	}
 
 	.head-banner > h1 {
 		font-size: 3em;	
 		letter-spacing: 0.1em;
 		top: 0;
-		padding: 120px 0;
+		padding: 220px 0;
 		height: 100%;
 	}
 
@@ -233,5 +264,9 @@ h1.description {
 		letter-spacing: 0.02em;
 		padding: 0 10px 20px 10px;
 		box-shadow: 0 0 2px 2px #471200;
+	}
+
+	footer {
+		padding-bottom: 50px;
 	}
 }
