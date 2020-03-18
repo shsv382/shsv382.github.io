@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/golden_turtle/static/css/main.2d690103.chunk.css",
+    "main.js": "/golden_turtle/static/js/main.8b335351.chunk.js",
+    "main.js.map": "/golden_turtle/static/js/main.8b335351.chunk.js.map",
+    "runtime-main.js": "/golden_turtle/static/js/runtime-main.2cc1edec.js",
+    "runtime-main.js.map": "/golden_turtle/static/js/runtime-main.2cc1edec.js.map",
+    "static/css/2.eb45ad44.chunk.css": "/golden_turtle/static/css/2.eb45ad44.chunk.css",
+    "static/js/2.a1ad688d.chunk.js": "/golden_turtle/static/js/2.a1ad688d.chunk.js",
+    "static/js/2.a1ad688d.chunk.js.map": "/golden_turtle/static/js/2.a1ad688d.chunk.js.map",
+    "index.html": "/golden_turtle/index.html",
+    "precache-manifest.8daf10ddf28377bf0663e00d16c8fc6f.js": "/golden_turtle/precache-manifest.8daf10ddf28377bf0663e00d16c8fc6f.js",
+    "service-worker.js": "/golden_turtle/service-worker.js",
+    "static/css/2.eb45ad44.chunk.css.map": "/golden_turtle/static/css/2.eb45ad44.chunk.css.map",
+    "static/css/main.2d690103.chunk.css.map": "/golden_turtle/static/css/main.2d690103.chunk.css.map",
+    "static/js/2.a1ad688d.chunk.js.LICENSE": "/golden_turtle/static/js/2.a1ad688d.chunk.js.LICENSE",
+    "static/media/upload.png": "/golden_turtle/static/media/upload.664a5bfd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2cc1edec.js",
+    "static/css/2.eb45ad44.chunk.css",
+    "static/js/2.a1ad688d.chunk.js",
+    "static/css/main.2d690103.chunk.css",
+    "static/js/main.8b335351.chunk.js"
+  ]
+}
