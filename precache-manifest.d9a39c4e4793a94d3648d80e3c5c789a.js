@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1ac71c4dc9dc8f91775d9286cabc0bd5",
+    "revision": "104d289d3b79de91f1f2eb6af067a7ce",
     "url": "/golden_turtle/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/golden_turtle/static/css/2.eb45ad44.chunk.css"
   },
   {
-    "revision": "fa7c5243397a2aac9113",
-    "url": "/golden_turtle/static/css/main.c9032ca8.chunk.css"
+    "revision": "cad834cffdf40e9cbe39",
+    "url": "/golden_turtle/static/css/main.23eccaef.chunk.css"
   },
   {
     "revision": "7c169fd724345ad06199",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/golden_turtle/static/js/2.a1ad688d.chunk.js.LICENSE"
   },
   {
-    "revision": "fa7c5243397a2aac9113",
-    "url": "/golden_turtle/static/js/main.8c790d3f.chunk.js"
+    "revision": "cad834cffdf40e9cbe39",
+    "url": "/golden_turtle/static/js/main.b9620d2c.chunk.js"
   },
   {
     "revision": "2783c09b9fa19176e962",

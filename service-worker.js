@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/golden_turtle/precache-manifest.efca0c3fc209d2984eecc083846dba56.js"
+  "/golden_turtle/precache-manifest.d9a39c4e4793a94d3648d80e3c5c789a.js"
 );
 
 self.addEventListener('message', (event) => {
