@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Single Page Apps for GitHub Pages</title>
     <script type="text/javascript">
-        window.location.replace(`${window.location.protocol}//${window.location.hostname}${window.location.port ? ":" + window.location.port : ""}/`)
+        const l = window.location;
+        window.location.replace(`${l.protocol}//${l.hostname}${l.port ? ":" + l.port : ""}/`)
     </script>
 </head>
 <body>
