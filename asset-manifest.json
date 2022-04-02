@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.6f49ace4.css",
-    "main.js": "/portfolio/static/js/main.608c17d0.js",
+    "main.js": "/portfolio/static/js/main.0dea397f.js",
     "static/js/377.2bf5b29e.chunk.js": "/portfolio/static/js/377.2bf5b29e.chunk.js",
     "static/media/Jura-VariableFont_wght.ttf": "/portfolio/static/media/Jura-VariableFont_wght.8b9338810a4d628fd950.ttf",
     "static/media/Jura-Regular.ttf": "/portfolio/static/media/Jura-Regular.6a92818f36a08eed80ba.ttf",
@@ -12,11 +12,11 @@
     "service-worker.js": "/portfolio/service-worker.js",
     "index.html": "/portfolio/index.html",
     "main.6f49ace4.css.map": "/portfolio/static/css/main.6f49ace4.css.map",
-    "main.608c17d0.js.map": "/portfolio/static/js/main.608c17d0.js.map",
+    "main.0dea397f.js.map": "/portfolio/static/js/main.0dea397f.js.map",
     "377.2bf5b29e.chunk.js.map": "/portfolio/static/js/377.2bf5b29e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6f49ace4.css",
-    "static/js/main.608c17d0.js"
+    "static/js/main.0dea397f.js"
   ]
 }
