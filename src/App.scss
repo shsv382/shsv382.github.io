@@ -1,0 +1,30 @@
+@import "color-scheme";
+
+* {
+  box-sizing: border-box;
+  background-color: $background-color;
+}
+
+.App {
+  text-align: center;
+  color: $font-color;
+}
+
+body {
+  font-family: 'Jura', sans-serif;
+  font-weight: 500;
+  padding: 80px 20px;
+  @media screen and (min-width: 768px) {
+    padding: 80px 60px;
+  }
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+.content {
+  max-width: 1280px;
+  margin: auto;
+}
