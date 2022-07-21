@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.215b3a74.css",
-    "main.js": "/static/js/main.311dbe5b.js",
+    "main.js": "/static/js/main.2338ddf8.js",
     "static/js/377.2bf5b29e.chunk.js": "/static/js/377.2bf5b29e.chunk.js",
     "static/media/Jura-VariableFont_wght.ttf": "/static/media/Jura-VariableFont_wght.8b9338810a4d628fd950.ttf",
     "static/media/Jura-Regular.ttf": "/static/media/Jura-Regular.6a92818f36a08eed80ba.ttf",
@@ -12,11 +12,11 @@
     "service-worker.js": "/service-worker.js",
     "index.html": "/index.html",
     "main.215b3a74.css.map": "/static/css/main.215b3a74.css.map",
-    "main.311dbe5b.js.map": "/static/js/main.311dbe5b.js.map",
+    "main.2338ddf8.js.map": "/static/js/main.2338ddf8.js.map",
     "377.2bf5b29e.chunk.js.map": "/static/js/377.2bf5b29e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.215b3a74.css",
-    "static/js/main.311dbe5b.js"
+    "static/js/main.2338ddf8.js"
   ]
 }
